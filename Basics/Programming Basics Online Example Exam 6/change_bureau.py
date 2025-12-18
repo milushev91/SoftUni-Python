@@ -4,7 +4,7 @@ USD_TO_BGN = 1.76
 EUR_TO_BGN = 1.95 
 
 bitcoins_count = int(input())
-yuans_count = int(input())
+yuans_count = float(input())
 commission_percent = float(input()) / 100
 
 #calculate bitcoins in bgn 
