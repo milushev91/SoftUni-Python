@@ -7,7 +7,6 @@ command_letters = {
     "n": 0,
 }
 
-
 while command != "End":
     letter = command
     
@@ -46,5 +45,4 @@ while command != "End":
         else:
             output += letter 
     
-        
     command = input()
