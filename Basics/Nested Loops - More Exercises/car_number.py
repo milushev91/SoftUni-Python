@@ -1,0 +1,21 @@
+start = int(input())
+end = int(input())
+
+for num1 in range(start, end + 1):
+    for num2 in range(start, end + 1):
+        for num3 in range(start, end + 1):
+            if (num2 + num3) % 2 != 0:
+                continue
+            for num4 in range(start, end + 1):
+                
+                if num1 % 2 == 0 and num4 % 2 == 0:
+                   continue
+               
+                if num1 % 2 != 0 and num4 % 2 != 0:
+                   continue
+               
+                if num4 >= num1:
+                   break
+               
+                print(f"{num1}{num2}{num3}{num4}", end=" ")
+                
