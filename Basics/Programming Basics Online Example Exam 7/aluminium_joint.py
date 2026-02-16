@@ -1,11 +1,12 @@
 # cook your dish here
+# cook your dish here
 DELIVERY_PRICE = 60
 
 joints_count = int(input())
 joints_type = input()
 has_delivery = input()
 
-if joints_count <= 10:
+if joints_count < 10:
     print("Invalid order")
 else:
     joint_price = 0 
@@ -35,7 +36,7 @@ else:
             joint_price *= 0.93   
     
     elif joints_type == "200X300":
-        joint_price = 210
+        joint_price = 250
 
         if joints_count > 50:
             joint_price *= 0.86
